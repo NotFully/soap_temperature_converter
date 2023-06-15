@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Conversion</title>
+</head>
+<body>
+    <h1>Temperature Conversion</h1>
+    <form method="POST" action="{% url 'soap_view' %}">
+        {% csrf_token %}
+        <label for="celsius">Celsius:</label>
+        <input type="text" name="celsius" id="celsius">
+        <button type="submit">Convert</button>
+    </form>
+</body>
+</html>
